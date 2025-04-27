@@ -1,11 +1,9 @@
-const names = ['Sayantan', 'Samriddhi'];
 
-
-function Post(){
-    const chooseName = Math.random() > 0.5 ? names[0] : names[1];
+function Post(props){
+    
     return (<div>
-        <p>{chooseName}</p>
-        <p>Reactjs is a javascript library</p>
+        <p>{props.author}</p>
+        <p>{props.body}</p>
         </div>)
 };
 export default Post;
